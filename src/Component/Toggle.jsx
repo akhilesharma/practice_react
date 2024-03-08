@@ -9,12 +9,23 @@ const Toggle = () => {
 
   return (
     <div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          obcaecati?
+        </p>
+      </div>
       {isVisible && (
         <div>
-          <p>Add Your Content Here</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            perferendis.
+          </p>
         </div>
       )}
-      <button onClick={toggleItem}>{isVisible ? "Hide" : "Show"}</button>
+      <button onClick={toggleItem}>
+        {isVisible ? "View Less" : "View More"}
+      </button>
     </div>
   );
 };
